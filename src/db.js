@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+const mongoURI = process.env.MONGODB_URI;
 module.exports = {
   connect: (DB_HOST) => {
     // Connect to the database with Mongoose
